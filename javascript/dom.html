@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Hola DOM</title>
+        <script type="text/JavaScript">
+          let contador=0;
+          function hola() {
+              contador++;
+            document.querySelector('h1').innerHTML = 'hola! x' + contador;
+            
+          }
+        </script>
+  </head>
+<body>
+       <h1> Hola!</h1>
+       <button onclick="hola();">Di hola!</button>
+</body>
+</html>

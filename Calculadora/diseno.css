@@ -1,0 +1,55 @@
+/*color de fondo*/ 
+body{ 
+  
+    background: linear-gradient(to left, blue, red);
+}
+
+/*colocacion de la calculadora*/
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: center;
+    
+}
+
+/*diseño de la calculadora*/
+.calcula{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 100px repeat(4, 75px);
+    padding: 15px;
+    border-radius: 32px;
+    background-color: black;
+    box-shadow: 15px 10px 0px 5px yellow;
+    
+}
+
+/*diseño de los botones*/
+button{
+    cursor: pointer;
+    font-size: 25px;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    border: none;
+    background-color: white;
+    box-shadow: 5px 5px 10px -3px yellow, -2px -2px 10px 1px yellow;
+}
+
+/*accion que se hara cuando den click en un boton*/
+button:active{
+    background-color: yellow;
+}
+
+/*diseño para la pantalla*/
+.display{
+    grid-column: 1/-1;
+    padding: 20px;
+    display: flex;
+    margin: 10px;
+    text-align: right;
+    justify-content: space-between;
+    border-radius: 25px;
+    font-size: 30px;
+}

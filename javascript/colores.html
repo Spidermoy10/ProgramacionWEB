@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Prueba con funciones</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('#rojo').onclick = () => {
+                    document.querySelector('h1').style.color = 'red';
+                }
+                document.querySelector('#verde').onclick = () => {
+                    document.querySelector('h1').style.color = 'green';
+                }
+                document.querySelector('#azul').onclick = () => {
+                    document.querySelector('h1').style.color = 'blue';
+                }
+            })
+        </script>
+        <body>
+            <h1>Mira cambio de color</h1>
+            <button id='rojo'>Rojo</button>
+            <button id="verde">Verde</button>
+            <button id="azul">azul</button>
+        </body>
+    </head>
+</html> 
